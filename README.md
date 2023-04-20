@@ -5,6 +5,8 @@ Created using:
 
 https://neocities.org
 
+https://sadgrl.online/
+
 https://cyber.dabamos.de/88x31/index.html
 
 https://blinkies.cafe/
@@ -12,3 +14,5 @@ https://blinkies.cafe/
 https://cooltext.com/
 
 https://webneko.net/
+
+https://www.smartgb.com
