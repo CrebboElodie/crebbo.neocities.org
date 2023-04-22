@@ -6,6 +6,16 @@ body {
   color: #13092D;
 }
 
+a {
+  color: #9999FF;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #CC99FF;
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
 }
