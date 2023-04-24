@@ -3,7 +3,7 @@ body {
   margin: 0;
   background-color: white;
   background-image: url("./40105j35lah6jfc.gif");
-  color: #13092D;
+  color: #333366;
 }
 
 a {
@@ -97,7 +97,7 @@ footer {
 }
 
 .box {
-  background-color: #FFCCCC;
+  background-color: #9999FF;
   border: 1px solid #FF99FF;
   padding: 10px;
 }
