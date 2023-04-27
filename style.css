@@ -28,7 +28,7 @@ a:hover{
 #header {
   width: 100%;
   background-color: #FF99FF;
-  height: 150px;
+  height: auto;
   background-image: url(https://sadhost.neocities.org/images/tiles/fondo_purplestars.gif);
   background-size: 100px 100px;
 }
