@@ -109,29 +109,3 @@ footer {
   font-size: smaller;
   background-color: #FFCCCC;
 }
-
-@media only screen and (max-width: 800px) {
-  #flex {
-      flex-wrap: wrap;
-  }
-
-  aside {
-      width: 100%;
-  }
-
-  main {
-      order: 1;
-  }
-
-  #leftSidebar {
-      order: 2;
-  }
-
-  #rightSidebar {
-      order: 3;
-  }
-
-  #navbar ul {
-      flex-wrap: wrap;
-  }
-}
