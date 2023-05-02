@@ -7,6 +7,8 @@ https://neocities.org
 
 https://sadgrl.online/
 
+https://plasticdino.neocities.org/
+
 https://cyber.dabamos.de/88x31/index.html
 
 https://blinkies.cafe/
