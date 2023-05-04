@@ -109,3 +109,7 @@ footer {
   font-size: smaller;
   background-color: #FFCCCC;
 }
+
+* {
+  box-sizing: border-box;
+}
