@@ -20,7 +20,7 @@
           if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
             var date_str = site_data.info.last_updated;
             var date_obj = new Date(site_data.info.last_updated);
-            document.getElementById("lastupdate").innerHTML = (date_obj.getMonth()+1) + "-" + date_obj.getDate() + "-" + date_obj.getFullYear();
+            document.getElementById("lastupdate").innerHTML = date_obj.getFullYear() + "-" + (date_obj.getMonth()+1) + "-" + date_obj.getDate();
           }
           document.getElementById("hitcount").innerHTML = num_str;
         }
