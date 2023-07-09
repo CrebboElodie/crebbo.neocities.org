@@ -1,5 +1,13 @@
+@font-face {
+  font-family: "FreePixel";
+  src: url("https://sadhost.neocities.org/fonts/FreePixel.ttf");
+  font-family: "rainyhearts";
+  src: url("./fonts/rainyhearts.ttf");
+}
+
 body {
-  font-family: 'monospace,Times New Roman';
+  font-family: "rainyhearts";
+  font-size: large;
   margin: 0;
   background-color: white;
   background-image: url("./40105j35lah6jfc.gif");
@@ -22,7 +30,7 @@ a:hover{
 
 #container {
   max-width: 1080px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 #header {
@@ -68,32 +76,35 @@ a:hover{
 }
 
 aside {
+  background-image: url("https://sadhost.neocities.org/images/tiles/pastels2.gif");
   background-color: #FFCCFF;
   text-align: center;
-  font-size: small;
 }
 
-
 main {
+  background-image: url("https://sadhost.neocities.org/images/tiles/rbowlinebg.gif");
   background-color: #FFCCFF;
   flex: 1;
-  padding: 20px;
+  padding: 16px;
   order: 2;
 }
 
 #leftSidebar {
   order: 1;
+  margin-right: 6px
 }
 
 #rightSidebar {
   order: 3;
+  margin-left: 6px;
 }
 
 footer {
   background-color: #FF99FF;
   width: 100%;
   height: auto;
-  padding: 10px;
+  padding: 8px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
@@ -111,6 +122,37 @@ footer {
   background-color: #FFCCCC;
 }
 
-* {
-  box-sizing: border-box;
+@media only screen and (max-width: 799px) {
+  
+  #flex {
+    flex-wrap: wrap;
+  }
+
+  body {
+    font-size: medium;
+  }
+
+  main {
+    order: 1;
+    padding: 8px;
+  }
+
+  aside {
+    font-size: x-small;
+    width: 100%;
+  }
+
+  footer {
+    font-size: x-small;
+  }
+
+  .box {
+    padding: 4px;
+    font-size: small;
+  }
+
+  #leftSidebar {
+    order: 2;
+    margin: auto;
+  }
 }
