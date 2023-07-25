@@ -3,32 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="googlebot" content="noindex">
-    <title>CrebboElodie's Crebbo Website</title>
+    <meta name="robots" content="noindex">
+    <title>CrebboElodie's Crebbo Website - Not Found</title>
     <link href="./style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" type="image/png" href="./icon.png">
   </head>
   <body>
-    <script>
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        var site_data = JSON.parse(this.responseText);
-        var num_arr = site_data.info.views.toString().split("");
-        var num_str = "";
-        for (i = 0; i < num_arr.length; i++) {
-          num_str += num_arr[i];
-          if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
-            var date_str = site_data.info.last_updated;
-            var date_obj = new Date(site_data.info.last_updated);
-            document.getElementById("lastupdate").innerHTML = date_obj.getFullYear() + "-" + (date_obj.getMonth()+1) + "-" + date_obj.getDate();
-          }
-          document.getElementById("hitcount").innerHTML = num_str;
-        }
-      };
-      xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=crebbo", true);
-      xhttp.send();
-    </script>
     <!--<script>NekoType="rose"</script>
     <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
       href="https://webneko.net">Neko</a></h1>-->
@@ -42,7 +22,7 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="http://users2.smartgb.com/g/g.php?a=s&i=g26-39081-c7">Guestbook</a></li>
-                <li><a href="https://open.spotify.com/user/qb0lin1ajqrwwhyg0esbhktds/playlists">Playlists</a></li>
+                <li><a href="https://open.spotify.com/playlist/7rxxAbbH01v5jzJe1mankg?si=f98cb54c74aa4085">Playlist</a></li>
                 <li><a href="#">Dreams</a></li>
                 <li><a href="#">Pets</a></li>
                 <li><a href="./programming.html">Programming</a></li>
@@ -126,55 +106,16 @@
           <img src="https://cyber.dabamos.de/88x31/bob.gif" style="padding-top:2px;padding-bottom:2px;"><br>
         </div>
       </aside>
-      <main>
-        <div class="box" style="display:flex;">
-          <div>
-            <img src="./blahaj.jpg" style="width:256px">
-          </div>
-          <div style="text-align:center;align-self:center;">
-            <h2>This website is a certified Blåhaj friendly zone! &lt;3</h2>
-            <img src="./blinkies/blinkiesCafe-Sg.gif">
+      <main>  
+        <h2>Here are some of my personal projects I'm working on, or have finnished</h2>
+        <p>the source code for all of my projects, and other projects I haven't listed here, can be found at <a href="https://git.gay/CrebboElodie">Git.gay</a></p>
+        <div style="display:flex;">
+          <div class="box" style="margin-right:8px;">
+            <h2><a href="https://git.gay/CrebboElodie/crebbo.neocities.org" style="color:#333366">crebbo.neocities.org</a> <img src="https://99gifshop.neocities.org/items/3/newblast.gif" style="vertical-align:middle;height:1.5em;"></h2>
+            <img src="./thumbnails/crebbo-neocities-org-thumbnail.png" width="256px">
+            <p>this is my personal website I made on <a href="https://neocities.org" style="color:#333366">neocities.org</a> to learn HTML and CSS, and to just make something cool where I can show off my work</p>
           </div>
         </div><br>
-        <div style="text-align:center;">
-          <img src="./blinkies/blinkiesCafe-xq.gif"><br>
-          <img src="https://99gifshop.neocities.org/items/7/line29.gif">
-        </div>
-        <div style="text-align:center;">
-          <h3><img src="https://99gifshop.neocities.org/items/5/spinheart.gif" style="height:1em;"> Hiiii!!!  I'm Elodie, welcome to the coolest website on the internet! <img src="https://99gifshop.neocities.org/items/5/spinheart.gif" style="height:1em;"></h3>
-        </div>
-        <div style="text-align:center;"><img src="https://99gifshop.neocities.org/items/3/color_earth.gif"></div>
-        <p>This is my own personal little space on the internet to just goof around and have fun;<br>
-        I think having a few little games and demos of my programs would be kinda fun, as well as my photography and music <img src="https://emojis.slackmojis.com/emojis/images/1643515245/12639/meow_headphones.png" style="vertical-align:middle;height:1.2em;">, 
-        and I'd also like to put some guides and resources for writing HTML and CSS to help other people make their own websites! <img src="https://99gifshop.neocities.org/items/new/btrfly02.gif" style="height:1em;"></p>
-        <p style="font-size:medium">(a few sites that I used to make this website are linked on the side-bar to the left, and will be linked in the navigation page soon)</p>
-        <p>There are also going to be lots of hidden links and pages on this site, so look closely for secrets <img src="https://emojis.slackmojis.com/emojis/images/1643515247/12654/meow_eyes.png?1643515247" style="vertical-align:middle;height:1.2em;"></p>
-        <img src="https://emojis.slackmojis.com/emojis/images/1643515485/15061/meow_pwettyplease.png" style="width:20px;height=20px;"><img src="./blinkies/blinkiesCafe-B6.gif"><br>
-        <div style="display:flex;">
-          <div class="box" style="padding-top:0px;text-align:center;flex-grow:1;display:flex;flex-direction:column;">
-            <h3>Buttons and Blinkies!</h3>
-            <a href="https://crebbo.neocities.org"><img src="./buttons/elodie-button.gif"></a><br>
-            <textarea readonly style="resize:none;color:#330066;background:#FFCCFF"><a href="https://crebbo.neocities.org"><img src="https://crebbo.neocities.org/buttons/elodie-button.gif"></a></textarea><br>
-            <div style="flex:0 0 1em;";></div>
-            <a href="https://crebbo.neocities.org"><img src="./blinkies/elodie-blinkie.gif"></a><br>
-            <textarea readonly style="resize:none;color:#330066;background:#FFCCFF"><a href="https://crebbo.neocities.org"><img src="https://crebbo.neocities.org/blinkies/elodie-blinkie.gif"></a></textarea>
-          </div>
-          <div style="flex-grow:2;"></div>
-          <div class="box">
-            <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Toast&dob=1685782243&gender=f&element=Air&pet=ozwomp.gif&map=ozwomp.jpg&background=&tablecolor=black&textcolor=black" frameborder="0"></iframe>
-          </div>
-        </div>
-        <div style="display:flex;">
-          <div style="width:50%;text-align:center;">
-            <h3>Listen to my playlists on Spotify</h3>
-            <a href="https://open.spotify.com/user/qb0lin1ajqrwwhyg0esbhktds/playlists"><img src="https://99gifshop.neocities.org/items/1/spinningcd.gif" style="height:20px;"><img src="./blinkies/blinkiesCafe-Ls.gif"><img src="https://99gifshop.neocities.org/items/1/spinningcd.gif" style="height:20px;"></a>
-          </div>
-          <div style="width:50%;text-align:center;">
-            <h3>Want some coffee?</h3>
-            <a href="./teapot.html"><img src="./blinkies/blinkiesCafe-iU.gif"></a> <img src="https://emojis.slackmojis.com/emojis/images/1643514598/6016/meow_coffee.png" style="width:20px;">
-          </div>
-        </div><br>
-        <div style="text-align:center;"><img src="https://99gifshop.neocities.org/items/7/line29.gif"></div>
         <div class="box" style="text-align:center;background-image:url(https://sadhost.neocities.org/images/tiles/Warning.jpg)">
           <h2 style="background:yellow">Comming Soon!</h2>
           <p style="background:yellow">Elodie is very busy writing HTML and CSS with reckless abandon</p>
@@ -186,7 +127,7 @@
       <footer id="footer" style="margin-top: 10px;">
         This website is <strong>Open-Source</strong>, check out the source-code <a href="https://git.gay/CrebboElodie/crebbo.neocities.org"><strong>Here</strong></a><br>
         make sure to be gay on the computer or alan turing died for nothing<br>
-        <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://web.badges.world/badges/other/buttongnugpl.png"></a> <img src="https://web.badges.world/badges/validated/anybrowser.png"> <img src="https://web.badges.world/badges/other/slogo_res640.png"> <img src="https://web.badges.world/badges/other/slogo_res800.png"> <img src="https://web.badges.world/badges/validated/w3chatered.gif"> <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrebbo.neocities.org"><img src="./badges/invalid_html5.png"></a> <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcrebbo.neocities.org&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css"><img src="https://venturas.org/sites/venturas.org/files/valid_css.png"></a>
+        <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://web.badges.world/badges/other/buttongnugpl.png"></a> <img src="https://web.badges.world/badges/validated/anybrowser.png"> <img src="https://web.badges.world/badges/validated/w3chatered.gif"> <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrebbo.neocities.org"><img src="./badges/invalid_html5.png"></a> <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcrebbo.neocities.org&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css"><img src="https://venturas.org/sites/venturas.org/files/valid_css.png"></a>
       </footer>
     </div>
   </body>
