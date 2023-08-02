@@ -5,6 +5,15 @@
   src: url("./fonts/rainyhearts.ttf");
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-1196px);
+  }
+}
+
 body {
   font-family: "rainyhearts";
   font-size: large;
@@ -79,6 +88,7 @@ aside {
   background-image: url("https://sadhost.neocities.org/images/tiles/pastels2.gif");
   background-color: #FFCCFF;
   text-align: center;
+  overflow:hidden;
 }
 
 main {
