@@ -97,6 +97,8 @@ main {
   flex: 1;
   padding: 16px;
   order: 2;
+  height: 1541.7px;
+  overflow-y: scroll;
 }
 
 #leftSidebar {
@@ -130,39 +132,4 @@ footer {
   padding: 10px;
   font-size: smaller;
   background-color: #FFCCCC;
-}
-
-@media only screen and (max-width: 799px) {
-  
-  #flex {
-    flex-wrap: wrap;
-  }
-
-  body {
-    font-size: medium;
-  }
-
-  main {
-    order: 1;
-    padding: 8px;
-  }
-
-  aside {
-    font-size: x-small;
-    width: 100%;
-  }
-
-  footer {
-    font-size: x-small;
-  }
-
-  .box {
-    padding: 4px;
-    font-size: small;
-  }
-
-  #leftSidebar {
-    order: 2;
-    margin: auto;
-  }
 }
