@@ -1,17 +1,21 @@
 @font-face {
-  font-family: "FreePixel";
-  src: url("https://sadhost.neocities.org/fonts/FreePixel.ttf");
   font-family: "rainyhearts";
   src: url("./fonts/rainyhearts.ttf");
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-1288px);
-  }
+@keyframes buttons {
+  0% {transform: translateX(0px)}
+  100% {transform: translateX(-1196px)}
+}
+
+@keyframes stamps {
+  0% {transform: translateX(-1339px)}
+  100% {transform: translatex(0px)}
+}
+
+@keyframes blinkies {
+  0% {transform: translateX(0px)}
+  100% {transform: translateX(-1386px)}
 }
 
 body {
@@ -28,7 +32,7 @@ a {
   font-weight: bold;
 }
 
-a:hover{
+a:hover {
   color: #CC99FF;
   font-weight: bold;
 }
@@ -38,7 +42,7 @@ a:hover{
 }
 
 #container {
-  max-width: 1080px;
+  max-width: 1024px;
   margin: auto;
 }
 
@@ -48,6 +52,8 @@ a:hover{
   height: auto;
   background-image: url(https://sadhost.neocities.org/images/tiles/fondo_purplestars.gif);
   background-size: 100px 100px;
+  margin-bottom: 6px;
+  text-align: center;
 }
 
 #navbar {
@@ -80,25 +86,43 @@ a:hover{
   text-decoration: underline;
 }
 
-#flex {
+.flex {
   display: flex;
 }
 
 aside {
-  background-image: url("https://sadhost.neocities.org/images/tiles/pastels2.gif");
-  background-color: #FFCCFF;
   text-align: center;
   overflow:hidden;
+  width: 188px
+}
+
+.sidebar {
+  width: 100%;
+  background-image: url("https://sadhost.neocities.org/images/tiles/pastels2.gif");
+  background-color: #FFCCFF;
+  border: 1px solid #FF99FF;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.sidebar a {
+  color: #9966FF;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  color: #CC99FF;
+  font-weight: bold;
 }
 
 main {
   background-image: url("https://sadhost.neocities.org/images/tiles/rbowlinebg.gif");
   background-color: #FFCCFF;
+  border: 1px solid #FF99FF;
   flex: 1;
-  padding: 16px;
+  padding: 8px;
   order: 2;
-  height: 1541.7px;
-  overflow-y: scroll;
+  text-align: center;
 }
 
 #leftSidebar {
@@ -114,14 +138,15 @@ main {
 footer {
   background-color: #FF99FF;
   width: 100%;
-  height: auto;
+  height: 48px;
   padding: 8px;
   padding-bottom: 0px;
   text-align: center;
+  margin-top: 6px;
 }
 
 .box {
-  background-color: #9999FF;
+  background-color: #9999FF88;
   border: 1px solid #FF99FF;
   padding: 10px;
 }
