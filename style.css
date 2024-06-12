@@ -18,22 +18,102 @@
   100% {transform: translateX(-1386px)}
 }
 
+.default {
+  /* body */
+  --font: "rainyhearts";
+  --font-color: #333366;
+  --background-color: white;
+  --background-image: url("./40105j35lah6jfc.gif");
+  /* a */
+  --primary-link-color: #9999ff;
+  --secondary-link-color: #cc99ff;
+  /* header */
+  --header-color: #ff99ff;
+  --header-image: url(https://sadhost.neocities.org/images/tiles/fondo_purplestars.gif);
+  /* navbar */
+  --nav-color: #ffccff;
+  --nav-image: url(https://sadhost.neocities.org/images/tiles/move_heart.gif);
+  --nav-primary-link-color: #cc99ff;
+  --nav-secondary-link-color: #9999ff;
+  /* sidebar */
+  --side-color: #ffccff;
+  --side-border: 1px solid #ff99ff;
+  --side-image: url("https://sadhost.neocities.org/images/tiles/pastels2.gif");
+  --side-primary-link-color: #9966ff;
+  --side-secondary-link-color: #cc99ff;
+  /* main */
+  --main-color: #ffccff;
+  --main-border: 1px solid #ff99ff;
+  --main-image: url("https://sadhost.neocities.org/images/tiles/rbowlinebg.gif");
+  /* footer */
+  --footer-color: #ff99ff;
+  --footer-image: none;
+  /* topbar */
+  --topbar-color: #ffcccc;
+  /* box */
+  --box-color: #9999ff88;
+  --box-border: 1px solid #ff99ff;
+  /* text area */
+  --textarea-color: #330066;
+  --textarea-background: #ffccff;
+}
+
+.dark {
+  /* body */
+  --font: "rainyhearts";
+  --font-color: #cc99ff;
+  --background-color: white;
+  --background-image: url(https://sadhost.neocities.org/images/tiles/stars3.gif);
+  /* a */
+  --primary-link-color: #9999ff;
+  --secondary-link-color: #cc99ff;
+  /* header */
+  --header-color: #ff99ff;
+  --header-image: url(https://sadhost.neocities.org/images/tiles/sparklebackground.gif);
+  /* navbar */
+  --nav-color: #ffccff;
+  --nav-image: url(https://sadhost.neocities.org/images/tiles/purplesky.gif);
+  --nav-primary-link-color: #cc99ff;
+  --nav-secondary-link-color: #9999ff;
+  /* sidebar */
+  --side-color: #ffccff;
+  --side-border: 1px solid #ff99ff;
+  --side-image: url(https://sadhost.neocities.org/images/tiles/purpdimond.gif);
+  --side-primary-link-color: #9966ff;
+  --side-secondary-link-color: #cc99ff;
+  /* main */
+  --main-color: #ffccff;
+  --main-border: 1px solid #ff99ff;
+  --main-image: url("https://sadhost.neocities.org/images/tiles/backstar.gif");
+  /* footer */
+  --footer-color: #9966ff88;
+  --footer-image: none;
+  /* topbar */
+  --topbar-color: #ffcccc;
+  /* box */
+  --box-color: #9966ff88;
+  --box-border: 1px solid #ff99ff;
+  /* text area */
+  --textarea-color: #330066;
+  --textarea-background: #ffccff;
+}
+
 body {
-  font-family: "rainyhearts";
+  font-family: var(--font);
   font-size: 18px;
   margin: 0;
-  background-color: white;
-  background-image: url("./40105j35lah6jfc.gif");
-  color: #333366;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  color: var(--font-color);
 }
 
 a {
-  color: #9999FF;
+  color: var(--primary-link-color);
   font-weight: bold;
 }
 
 a:hover {
-  color: #CC99FF;
+  color: var(--secondary-link-color);
   font-weight: bold;
 }
 
@@ -42,15 +122,15 @@ a:hover {
 }
 
 #container {
-  max-width: 1024px;
+  max-width: 1280px;
   margin: auto;
 }
 
 #header {
   width: 100%;
-  background-color: #FF99FF;
+  background-color: var(--header-color);
   height: auto;
-  background-image: url(https://sadhost.neocities.org/images/tiles/fondo_purplestars.gif);
+  background-image: var(--header-image);
   background-size: 100px 100px;
   margin-bottom: 6px;
   text-align: center;
@@ -58,8 +138,8 @@ a:hover {
 
 #navbar {
   height: 40px;
-  background-color: #FFCCFF;
-  background-image: url(https://sadhost.neocities.org/images/tiles/move_heart.gif);
+  background-color: var(--nav-color);
+  background-image: var(--nav-image);
   width: 100%;
 }
 
@@ -76,13 +156,13 @@ a:hover {
 }
 
 #navbar li a {
-  color: #CC99FF;
+  color: var(--nav-primary-link-color);
   font-weight: 800;
   text-decoration: none;
 }
 
 #navbar li a:hover {
-  color: #9999FF;
+  color: var(--nav-secondary-link-color);
   text-decoration: underline;
 }
 
@@ -93,32 +173,32 @@ a:hover {
 aside {
   text-align: center;
   overflow:hidden;
-  width: 188px
+  max-width: 188px
 }
 
 .sidebar {
   width: 100%;
-  background-image: url("https://sadhost.neocities.org/images/tiles/pastels2.gif");
-  background-color: #FFCCFF;
-  border: 1px solid #FF99FF;
+  background-image: var(--side-image);
+  background-color: var(--side-color);
+  border: var(--side-border);
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 .sidebar a {
-  color: #9966FF;
+  color: var(--side-primary-link-color);
   font-weight: bold;
 }
 
 .sidebar a:hover {
-  color: #CC99FF;
+  color: var(--side-secondary-link-color);
   font-weight: bold;
 }
 
 main {
-  background-image: url("https://sadhost.neocities.org/images/tiles/rbowlinebg.gif");
-  background-color: #FFCCFF;
-  border: 1px solid #FF99FF;
+  background-image: var(--main-image);
+  background-color: var(--main-color);
+  border: var(--main-border);
   flex: 1;
   padding: 8px;
   order: 2;
@@ -136,7 +216,8 @@ main {
 }
 
 footer {
-  background-color: #FF99FF;
+  background-color: var(--footer-color);
+  background-image: var(--footer-image);
   width: 100%;
   height: 48px;
   padding: 8px;
@@ -146,8 +227,8 @@ footer {
 }
 
 .box {
-  background-color: #9999FF88;
-  border: 1px solid #FF99FF;
+  background-color: var(--box-color);
+  border: var(--box-border);
   padding: 10px;
 }
 
@@ -156,5 +237,11 @@ footer {
   height: 30px;
   padding: 10px;
   font-size: smaller;
-  background-color: #FFCCCC;
+  background-color: var(--topbar-color);
+}
+
+textarea {
+  resize: none;
+  color: var(--textarea-color);
+  background: var(--textarea-background);
 }
