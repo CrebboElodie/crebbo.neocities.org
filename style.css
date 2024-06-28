@@ -110,15 +110,18 @@ body {
 a {
   color: var(--primary-link-color);
   font-weight: bold;
+  text-shadow: none;
 }
 
 a:hover {
   color: var(--secondary-link-color);
   font-weight: bold;
+  text-shadow: 2px 2px var(--primary-link-color);
 }
 
 * {
   box-sizing: border-box;
+  text-shadow: 2px 2px #9966ff88;
 }
 
 #container {
@@ -244,4 +247,5 @@ textarea {
   resize: none;
   color: var(--textarea-color);
   background: var(--textarea-background);
+  text-shadow: none;
 }
