@@ -97,6 +97,16 @@ a:hover {
   text-shadow: 2px 2px var(--primary-link-color);
 }
 
+.button {
+  border: none;
+  margin: 1px;
+}
+
+.button:hover {
+  border: 1px solid var(--primary-link-color);
+  margin: 0px;
+}
+
 * {
   box-sizing: border-box;
   text-shadow: 2px 2px #9966ff88;
